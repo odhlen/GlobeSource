@@ -91,7 +91,7 @@ DAT.Globe = function(container, colorFn) {
     container.style.font = '13px/20px Arial, sans-serif';
 
     var shader, uniforms, material;
-    w = container.width: 500;
+    w = container.width(500);
     h = container.offsetHeight || window.innerHeight;
 
     camera = new THREE.Camera(
