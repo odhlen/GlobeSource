@@ -307,7 +307,7 @@ DAT.Globe = function(container, colorFn) {
     mouse.y = event.clientY;
     
     //var zoomDamp = distance/1000;
-    var zoomDamp = distance/500;
+    var zoomDamp = distance/1000;
 
     target.x = targetOnDown.x + (mouse.x - mouseOnDown.x) * 0.005 * zoomDamp;
     target.y = targetOnDown.y + (mouse.y - mouseOnDown.y) * 0.005 * zoomDamp;
