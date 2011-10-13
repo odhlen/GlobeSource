@@ -92,7 +92,6 @@ DAT.Globe = function(container, colorFn) {
 
     var shader, uniforms, material;
     
-    container.width = '500px';
     w = container.width;
     h = container.offsetHeight || window.innerHeight;
 
