@@ -105,7 +105,8 @@ DAT.Globe = function(container, colorFn) {
 
     scene = new THREE.Scene();
     sceneAtmosphere = new THREE.Scene();
-
+  
+    //var geometry = new THREE.Sphere(200, 40, 30);
     var geometry = new THREE.Sphere(100, 40, 30);
 
     shader = Shaders['earth'];
@@ -305,7 +306,7 @@ DAT.Globe = function(container, colorFn) {
     mouse.x = - event.clientX;
     mouse.y = event.clientY;
 
-    var zoomDamp = distance/1000;
+    var zoomDamp = distance/750;
 
     target.x = targetOnDown.x + (mouse.x - mouseOnDown.x) * 0.005 * zoomDamp;
     target.y = targetOnDown.y + (mouse.y - mouseOnDown.y) * 0.005 * zoomDamp;
