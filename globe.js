@@ -71,7 +71,7 @@ DAT.Globe = function(container, colorFn) {
 
   var overRenderer;
 
-  var imgDir = 'https://github.com/odhlen/GlobeSource/raw/master/';
+  var imgDir = '/resource/1318499938000/globeWorld';
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
