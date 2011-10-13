@@ -92,8 +92,10 @@ DAT.Globe = function(container, colorFn) {
 
     var shader, uniforms, material;
     
-    w = container.offsetWidth || window.innerWidth; 
-    h = container.offsetHeight || window.innerHeight;
+    //w = container.offsetWidth || window.innerWidth; 
+    //h = container.offsetHeight || window.innerHeight;
+    w = container.Width;
+    h = container.Height;
 
     camera = new THREE.Camera(
         30, w / h, 1, 10000);
