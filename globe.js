@@ -92,10 +92,10 @@ DAT.Globe = function(container, colorFn) {
 
     var shader, uniforms, material;
     
-    //w = container.offsetWidth || window.innerWidth; 
-    //h = container.offsetHeight || window.innerHeight;
-    w = container.innerWidth;
-    h = container.innerHeight;
+    w = container.offsetWidth || window.innerWidth; 
+    h = container.offsetHeight || window.innerHeight;
+    //w = container.innerWidth;
+    //h = container.innerHeight;
 
     camera = new THREE.Camera(
         30, w / h, 1, 10000);
@@ -106,7 +106,7 @@ DAT.Globe = function(container, colorFn) {
     scene = new THREE.Scene();
     sceneAtmosphere = new THREE.Scene();
 
-    var geometry = new THREE.Sphere(200, 40, 30);
+    var geometry = new THREE.Sphere(100, 20, 15);
 
     shader = Shaders['earth'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
