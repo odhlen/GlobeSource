@@ -71,7 +71,7 @@ DAT.Globe = function(container, colorFn) {
 
   var overRenderer;
 
-  var imgDir = 'https://github.com/odhlen/GlobeSource/blob/master/world.jpg';
+  var imgDir = '/resource/1326368873000/world';
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
